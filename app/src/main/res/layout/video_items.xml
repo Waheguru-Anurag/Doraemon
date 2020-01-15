@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    app:cardCornerRadius="4dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+        <fragment
+            android:name="com.google.android.youtube.player.YouTubePlayerFragmentX"
+            android:id="@+id/youtube_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+        />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bn"
+            android:layout_below="@+id/youtube_video"
+            android:layout_centerHorizontal="true"
+            android:text="PlayVideo"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

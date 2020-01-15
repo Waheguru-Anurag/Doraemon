@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.doraemon">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Doraemon"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyANemTCtbjtJpJBuOOPDe1Jz4VEuF7x8XE" />
+
+        <activity android:name=".Collection.MainActivity2" />
+        <activity
+            android:name=".ui.Time_Machine"
+            android:parentActivityName=".Collection.MainActivity2" />
+        <activity
+            android:name=".ui.Saviour"
+            android:parentActivityName=".Collection.MainActivity2" />
+        <activity
+            android:name=".ui.Anywhere_Door"
+            android:parentActivityName=".Collection.MainActivity2" />
+        <activity android:name=".ui.Login_Saviour" android:noHistory="true"></activity>
+        <activity android:name=".ui.Anywhere_door_street_view" />
+        <activity android:name=".Collection.Main6Activity" />
+        <activity
+            android:name=".Collection.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Collection.Main5Activity" />
+        <activity
+            android:name=".Collection.Main2Activity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Collection.Main3Activity" />
+        <activity
+            android:name=".Collection.Main4Activity"
+            android:parentActivityName=".Collection.Main3Activity" />
+    </application>
+
+</manifest>
